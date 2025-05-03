@@ -1,126 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Empresa TI – Apresentação</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/conteudo.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Empresa TI – Apresentação</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/conteudo.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo-link">
+          <img
+            src="../assets/logo.png"
+            alt="Logo Empresa TI"
+            class="logo"
+            loading="lazy"
+          />
+        </a>
+        <div>
+          <h1 class="site-title">Empresa TI</h1>
+          <p class="site-subtitle">
+            Soluções tecnológicas sob medida para transformar negócios.
+          </p>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Cadastrar-se</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo-link">
-        <img src="../assets/logo.png" alt="Logo Empresa TI" class="logo" loading="lazy" />
-      </a>
-      <h1 class="site-title">Empresa TI</h1>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="login.html">Login</a></li>
-          <li><a href="register.html">Cadastrar-se</a></li>
+    <main class="container">
+      <section id="history" class="section">
+        <h2>Nossa História</h2>
+        <p>
+          Desde 2004, oferecemos soluções tecnológicas inovadoras e seguras para
+          diversos segmentos de mercado. Nossa missão sempre foi impulsionar a
+          transformação digital com responsabilidade, acessibilidade e
+          excelência.
+        </p>
+        <p>
+          Ao longo dos anos, nos consolidamos como referência em desenvolvimento
+          de software, segurança da informação e infraestrutura de rede. Com uma
+          equipe multidisciplinar e apaixonada por tecnologia, entregamos
+          projetos de alto impacto que contribuem diretamente para o crescimento
+          sustentável de nossos clientes.
+        </p>
+      </section>
+
+      <section id="video" class="section">
+        <h2>Vídeo Institucional</h2>
+        <div id="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/A5kPdbZm-zI"
+            title="Vídeo Institucional"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <h2>Galeria</h2>
+        <div class="gallery">
+          <figure>
+            <img src="../assets/instalacao1.jpg" alt="Instalação 1" />
+          </figure>
+          <figure>
+            <img src="../assets/instalacao2.jpg" alt="Instalação 2" />
+          </figure>
+          <figure><img src="../assets/equipe.jpg" alt="Equipe" /></figure>
+          <figure>
+            <img src="../assets/atendimento.jpg" alt="Atendimento" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <h2>Serviços de TI</h2>
+        <ul class="services-list">
+          <li>Desenvolvimento de Software Sob Medida</li>
+          <li>Consultoria de Segurança da Informação</li>
+          <li>Gerenciamento de Infraestrutura de Rede</li>
+          <li>Suporte e Manutenção Técnica</li>
+          <li>Cloud Computing e Virtualização</li>
+          <li>Desenvolvimento de Aplicativos Móveis</li>
+          <li>Inteligência Artificial e Machine Learning</li>
+          <li>Análise e Ciência de Dados</li>
+          <li>Automação de Processos</li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </section>
 
-  <main class="container">
-    <section id="history" class="section">
-      <h2>Nossa História</h2>
-      <p>Desde 2010, oferecemos soluções tecnológicas inovadoras e seguras para diversos segmentos de mercado.</p>
-    </section>
+      <section id="founders" class="section">
+        <h2>Fundadores</h2>
+        <table role="presentation" class="founders-table">
+          <thead>
+            <tr>
+              <th>Cargo</th>
+              <th>Nome</th>
+              <th>Experiência</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="ceo">CEO</td>
+              <td>Luiza Omena</td>
+              <td>
+                Referência em Segurança da Informação e Gestão de Projetos.
+              </td>
+            </tr>
+            <tr>
+              <td>CTO</td>
+              <td>Henrique Cordeiro</td>
+              <td>
+                Especialista em Arquitetura de Software e Sistemas Resilientes.
+              </td>
+            </tr>
+            <tr>
+              <td>COO</td>
+              <td>Nika Omena</td>
+              <td>Consultora de Infraestrutura de Rede e Snax.</td>
+            </tr>
+            <tr>
+              <td>CFO</td>
+              <td>Flora Omena</td>
+              <td>Inovadora na Segurança Defensiva e em Liderança.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-    <section id="video" class="section">
-      <h2>Vídeo Institucional</h2>
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/A5kPdbZm-zI" title="Vídeo Institucional" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <h2>Galeria</h2>
-      <div class="gallery">
-        <figure><img src="../assets/instalacao1.jpg" alt="Instalação 1" /></figure>
-        <figure><img src="../assets/instalacao2.jpg" alt="Instalação 2" /></figure>
-        <figure><img src="../assets/equipe.jpg" alt="Equipe" /></figure>
-        <figure><img src="../assets/atendimento.jpg" alt="Atendimento" /></figure>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <h2>Serviços de TI</h2>
-      <ul class="services-list">
-        <li>Desenvolvimento de Software Sob Medida</li>
-        <li>Consultoria de Segurança da Informação</li>
-        <li>Gerenciamento de Infraestrutura de Rede</li>
-        <li>Suporte e Manutenção Técnica</li>
-        <li>Cloud Computing e Virtualização</li>
-        <li>Desenvolvimento de Aplicativos Móveis</li>
-        <li>Inteligência Artificial e Machine Learning</li>
-        <li>Análise e Ciência de Dados</li>
-        <li>Automação de Processos</li>
-      </ul>
-    </section>
-
-    <section id="founders" class="section">
-      <h2>Fundadores</h2>
-      <table role="presentation" class="founders-table">
-        <thead>
-          <tr>
-            <th>Cargo</th>
-            <th>Nome</th>
-            <th>Experiência</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CEO</td>
-            <td>Maria Silva</td>
-            <td>15 anos em gestão de projetos TI.</td>
-          </tr>
-          <tr>
-            <td>CTO</td>
-            <td>João Pereira</td>
-            <td>Especialista em segurança ofensiva.</td>
-          </tr>
-          <tr>
-            <td>COO</td>
-            <td>Ana Costa</td>
-            <td>Consultora de infraestrutura de rede.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="contacts">
-        <h3>Contatos</h3>
-        <ul>
-          <li><strong>Fixo:</strong> (81) 3445-9565</li>
-          <li><strong>WhatsApp:</strong> (81) 9 8788-9565</li>
-          <li><a href="mailto:tech@gmail.com">tech@gmail.com</a></li>
-        </ul>
-      </div>
-      <div class="address">
-        <h3>Endereço</h3>
-        <p>Rua Cais do Apolo, 122 – Centro, Recife – PE</p>
-      </div>
-      <div class="payments">
-        <h3>Formas de Pagamento</h3>
-        <div class="payment-methods">
-          <i class="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-amex"></i>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="contacts">
+          <h3>Contatos</h3>
+          <ul>
+            <li><strong>Fixo:</strong> (81) 3445-9565</li>
+            <li><strong>WhatsApp:</strong> (81) 9 8788-9565</li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:tech@gmail.com">tech@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Endereço</h3>
+          <p>Rua Cais do Apolo, 122 – Centro, Recife – PE</p>
+        </div>
+        <div class="payments">
+          <h3>Formas de Pagamento</h3>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../js/conteudo.js"></script>
-</body>
-
+    <script src="../js/session.js"></script>
+  </body>
 </html>

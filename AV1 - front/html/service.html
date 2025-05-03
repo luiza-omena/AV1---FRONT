@@ -1,133 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solicitação de Serviços de TI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/conteudo.css" />
+    <link rel="stylesheet" href="../css/service.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Solicitação de Serviços de TI</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="../css/global.css" />
-  <link rel="stylesheet" href="../css/conteudo.css" />
-  <link rel="stylesheet" href="../css/service.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo-link">
-        <img src="../assets/logo.png" alt="Logo Empresa TI" class="logo" loading="lazy" />
-      </a>
-      <h1 class="site-title">Empresa TI</h1>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="login.html">Login</a></li>
-          <li><a href="register.html">Cadastrar-se</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container login-container">
-    <h2>Solicitação de Serviços de TI</h2>
-
-    <!-- Usuário Logado -->
-    <section class="user-info section">
-      <h3>Informações do Usuário</h3>
-      <p><strong>Nome:</strong> João Silva</p>
-      <p><strong>Email (login):</strong> joao.silva@example.com</p>
-    </section>
-
-    <!-- Lista de Solicitações -->
-    <section class="orders-list section">
-      <h3>Solicitações Realizadas</h3>
-      <table id="ordersTable" class="founders-table">
-        <thead>
-          <tr>
-            <th>Data do Pedido</th>
-            <th>Número</th>
-            <th>Serviço</th>
-            <th>Status</th>
-            <th>Preço</th>
-            <th>Data Prevista</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Linhas iniciais fixas -->
-          <tr>
-            <td>2025-04-20</td>
-            <td>001</td>
-            <td>Desenvolvimento de App</td>
-            <td>Concluído</td>
-            <td>R$ 5.000,00</td>
-            <td>2025-04-30</td>
-            <td><button class="delete-btn">Excluir</button></td>
-          </tr>
-          <tr>
-            <td>2025-04-22</td>
-            <td>002</td>
-            <td>Consultoria de Segurança</td>
-            <td>Em Andamento</td>
-            <td>R$ 3.500,00</td>
-            <td>2025-05-02</td>
-            <td><button class="delete-btn">Excluir</button></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Nova Solicitação -->
-    <section class="new-request section">
-      <h3>Nova Solicitação</h3>
-
-      <form id="serviceForm" class="login-form">
-        <label for="service">Serviço de TI:</label>
-        <select id="service" required>
-          <option value="">Selecione um serviço</option>
-          <option value="Desenvolvimento de Software">Desenvolvimento de Software</option>
-          <option value="Consultoria de Segurança">Consultoria de Segurança</option>
-          <option value="Gerenciamento de Rede">Gerenciamento de Rede</option>
-          <option value="Suporte Técnico">Suporte Técnico</option>
-        </select>
-
-        <label><strong>Preço:</strong> <span id="price">-</span></label>
-        <label><strong>Prazo de Atendimento:</strong> <span id="deadline">-</span></label>
-        <label><strong>Data Prevista:</strong> <span id="expectedDate">-</span></label>
-        <label><strong>Status:</strong> <span id="status">EM ELABORAÇÃO</span></label>
-
-        <div class="button-group">
-          <button type="submit">Incluir Solicitação</button>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo-link">
+          <img
+            src="../assets/logo.png"
+            alt="Logo Empresa TI"
+            class="logo"
+            loading="lazy"
+          />
+        </a>
+        <div>
+          <h1 class="site-title">Empresa TI</h1>
+          <p class="site-subtitle">
+            Soluções tecnológicas sob medida para transformar negócios.
+          </p>
         </div>
-      </form>
-    </section>
-  </main>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Cadastrar-se</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="contacts">
-        <h3>Contatos</h3>
-        <ul>
-          <li><strong>Fixo:</strong> (81) 3445-9565</li>
-          <li><strong>WhatsApp:</strong> (81) 9 8788-9565</li>
-          <li><a href="mailto:tech@gmail.com">tech@gmail.com</a></li>
-        </ul>
-      </div>
-      <div class="address">
-        <h3>Endereço</h3>
-        <p>Rua Cais do Apolo, 122 – Centro, Recife – PE</p>
-      </div>
-      <div class="payments">
-        <h3>Formas de Pagamento</h3>
-        <div class="payment-methods">
-          <i class="fab fa-cc-visa"></i>
-          <i class="fab fa-cc-mastercard"></i>
-          <i class="fab fa-cc-amex"></i>
+    <main class="container login-container">
+      <h2>Solicitação de Serviços de TI</h2>
+
+      <section class="orders-list section">
+        <h3>Solicitações Realizadas</h3>
+        <table id="ordersTable" class="founders-table">
+          <thead>
+            <tr>
+              <th style="color: black">#</th>
+              <th>Data do Pedido</th>
+              <th>Serviço</th>
+              <th>Status</th>
+              <th>Preço</th>
+              <th>Data Prevista</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="new-request section">
+        <h3>Nova Solicitação</h3>
+
+        <form id="serviceForm" class="login-form">
+          <label for="service">Serviço de TI:</label>
+          <select id="service" required>
+            <option value="">Selecione um serviço</option>
+            <option value="Desenvolvimento de Software">
+              Desenvolvimento de Software
+            </option>
+            <option value="Consultoria de Segurança">
+              Consultoria de Segurança
+            </option>
+            <option value="Gerenciamento de Rede">Gerenciamento de Rede</option>
+            <option value="Suporte Técnico">Suporte Técnico</option>
+          </select>
+
+          <label><strong>Preço:</strong> <span id="price">-</span></label>
+          <label
+            ><strong>Prazo de Atendimento:</strong>
+            <span id="deadline">-</span></label
+          >
+          <label
+            ><strong>Data Prevista:</strong>
+            <span id="expectedDate">-</span></label
+          >
+
+          <div class="button-group">
+            <button type="submit">Incluir Solicitação</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="contacts">
+          <h3>Contatos</h3>
+          <ul>
+            <li><strong>Fixo:</strong> (81) 3445-9565</li>
+            <li><strong>WhatsApp:</strong> (81) 9 8788-9565</li>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:tech@gmail.com">tech@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Endereço</h3>
+          <p>Rua Cais do Apolo, 122 – Centro, Recife – PE</p>
+        </div>
+        <div class="payments">
+          <h3>Formas de Pagamento</h3>
+          <div class="payment-methods">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-amex"></i>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="../js/service.js"></script>
-</body>
-
+    <script src="../js/service.js"></script>
+    <script src="../js/session.js"></script>
+  </body>
 </html>

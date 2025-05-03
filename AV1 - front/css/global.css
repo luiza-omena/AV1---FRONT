@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: var(--gray-light);
   color: var(--gray-dark);
   line-height: 1.6;
@@ -47,10 +47,9 @@ img[loading] {
   opacity: 0.96;
 }
 
-/* Header Styles */
 .header {
   background: var(--blue-dark);
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -67,8 +66,48 @@ img[loading] {
   padding: 0 2rem;
 }
 
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+
+  .site-title {
+    font-size: 1.6rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .nav-list a {
+    width: 100%;
+    padding: 0.75rem 0;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .nav-list li {
+    margin-top: 1rem;
+  }
+}
+
 .logo {
-  width: 150px;
+  width: 7rem;
   transition: transform 0.3s ease;
 }
 
@@ -81,7 +120,7 @@ img[loading] {
   color: var(--white);
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-list {
@@ -112,7 +151,6 @@ img[loading] {
   transform: translateY(0);
 }
 
-/* Footer Styles */
 .footer {
   background: var(--blue-dark);
   color: var(--white);
@@ -164,7 +202,6 @@ img[loading] {
   transform: scale(1.1);
 }
 
-/* Payment Icons Styles */
 .payment-methods {
   display: flex;
   gap: 1.5rem;
@@ -182,7 +219,6 @@ img[loading] {
   color: var(--blue-light);
 }
 
-/* Removendo as cores específicas das bandeiras */
 .payment-methods .fa-cc-visa,
 .payment-methods .fa-cc-mastercard,
 .payment-methods .fa-cc-amex {
@@ -194,6 +230,8 @@ img[loading] {
   text-decoration: none;
 }
 
-.logo-link:hover .logo {
-  transform: scale(1.05);
+.site-subtitle {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-top: 0.2rem;
 }

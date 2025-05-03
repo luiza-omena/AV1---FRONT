@@ -11,12 +11,12 @@
   margin-bottom: 1.5rem;
   border-bottom: 3px solid var(--blue);
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.video-wrapper {
+#video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
@@ -26,11 +26,11 @@
   transition: transform 0.3s ease;
 }
 
-.video-wrapper:hover {
+#video-wrapper:hover {
   transform: scale(1.02);
 }
 
-.video-wrapper iframe {
+#video-wrapper iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -111,12 +111,12 @@
   transform: translateX(5px);
 }
 
-h2+p {
+h2 + p {
   margin-top: 0.75rem;
   color: var(--gray-dark);
 }
 
-.services-list li~li {
+.services-list li ~ li {
   border-top: 1px solid var(--gray);
 }
 
@@ -152,4 +152,8 @@ h2+p {
 
 .founders-table tr:nth-child(even) {
   background: var(--gray-light);
+}
+
+#ceo {
+  color: rebeccapurple;
 }
