@@ -1,0 +1,255 @@
+/* Estilos específicos para a página de serviços */
+.login-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: var(--blue-dark);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.user-info {
+    background: var(--gray-light);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-info h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--gray-dark);
+}
+
+.orders-list {
+    margin-bottom: 2rem;
+}
+
+.orders-list h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.founders-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.founders-table th {
+    background: var(--blue);
+    color: var(--white);
+    padding: 1.25rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.founders-table td {
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--gray);
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.founders-table tr:hover td {
+    background: var(--gray-light);
+}
+
+.founders-table tr:nth-child(even) {
+    background: var(--gray-light);
+}
+
+.new-request {
+    background: var(--gray-light);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.new-request h3 {
+    color: var(--blue);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-form label {
+    font-weight: 500;
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+}
+
+.login-form select {
+    padding: 1rem;
+    border: 2px solid var(--gray);
+    border-radius: 8px;
+    background: var(--white);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.login-form select:focus {
+    border-color: var(--blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+}
+
+.login-form span {
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.button-group button {
+    padding: 1rem 2rem;
+    background: var(--blue-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.button-group button:hover {
+    background: var(--blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-group button:active {
+    transform: translateY(0);
+}
+
+.delete-btn {
+    padding: 0.75rem 1.5rem;
+    background: #b91c1c;
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 1.5rem;
+    }
+
+    .login-container h2 {
+        font-size: 2rem;
+    }
+
+    .founders-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}
+
+/* Estilos para mensagem de acesso restrito */
+.message.error {
+    background-color: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #b91c1c;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.message.error p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.message.error .button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.message.error .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--blue-dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.message.error .button:hover {
+    background-color: var(--blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message.error .button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

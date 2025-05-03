@@ -1,0 +1,199 @@
+:root {
+  --blue-dark: #1a365d;
+  --blue: #2b6cb0;
+  --blue-light: #4299e1;
+  --white: #ffffff;
+  --gray-light: #f7fafc;
+  --gray: #e2e8f0;
+  --gray-dark: #4a5568;
+  --accent: #02526a;
+  --accent-light: #04a8da;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  line-height: 1.6;
+  cursor: default;
+}
+
+.container {
+  max-width: 1150px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+img[loading] {
+  opacity: 0.96;
+}
+
+/* Header Styles */
+.header {
+  background: var(--blue-dark);
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.site-title {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-list a {
+  color: var(--white);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-list a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list a:active {
+  transform: translateY(0);
+}
+
+/* Footer Styles */
+.footer {
+  background: var(--blue-dark);
+  color: var(--white);
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-container h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-container a {
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-container a:hover {
+  opacity: 0.8;
+}
+
+.footer-container ul {
+  list-style: none;
+}
+
+.footer-container li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-container img {
+  width: 50px;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Payment Icons Styles */
+.payment-methods {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.payment-methods i {
+  font-size: 2.5rem;
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.payment-methods i:hover {
+  transform: scale(1.1);
+  color: var(--blue-light);
+}
+
+/* Removendo as cores específicas das bandeiras */
+.payment-methods .fa-cc-visa,
+.payment-methods .fa-cc-mastercard,
+.payment-methods .fa-cc-amex {
+  color: var(--white);
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-link:hover .logo {
+  transform: scale(1.05);
+}

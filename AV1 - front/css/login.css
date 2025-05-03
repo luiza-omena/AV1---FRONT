@@ -1,0 +1,74 @@
+.login-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label {
+  font-weight: bold;
+  color: var(--blue-dark);
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+
+.login-form input:focus {
+  border-color: var(--blue);
+  outline: none;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-group button {
+  flex: 1;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-group button:hover {
+  background: var(--blue-light);
+}
+
+.form-links {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.form-links a {
+  font-size: 0.9rem;
+}
+
+.message {
+  color: red;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.instructions {
+  background: var(--gray-light);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
